@@ -13,11 +13,11 @@ def uniq_add(my_list=[]):
     Returns the sum of all unique integers in a list.
     """
 
-    unique_integers = set()
+    uniq_list = set()
     sum = 0
     for num in my_list:
-        if num not in unique_integers:
-            unique_integers.add(num)
+        if num not in uniq_list:
+            uniq_list.add(num)
             sum += num
     return sum
     
