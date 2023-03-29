@@ -1,7 +1,13 @@
 #!/usr/bin/python3
-class Square:
+"""Define a class Square."""
 
-    """define a class square """
-    def __init__(self,size):
-        """define a constructor method that takes a size parameter | the doble underscore makes the class arttribute private"""
+
+class Square:
+    """Represent a square."""
+
+    def __init__(self, size):
+        """Initialize a new Square.
+        Args:
+        size (int): The size of the new square.
+        """
         self.__size = size
