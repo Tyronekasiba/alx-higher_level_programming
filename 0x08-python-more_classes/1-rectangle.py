@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-""" class that defines a rectangle and returns area """
+""" define Rectangle class """
 class Rectangle:
     """ represent a rectangle"""
     def __init__(self, width=0, height=0):
