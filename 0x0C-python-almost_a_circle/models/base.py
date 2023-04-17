@@ -11,7 +11,7 @@ class Base:
         Construct a Base class.
 
         Args:
-            id (int, optional): unique identifier for the instance, default to None
+        id (int, optional): unique identifier for the instance, default to None
         """
 
         if id is not None:
@@ -19,6 +19,6 @@ class Base:
             self.id = id
         else:
             # if id is not provided, increment nb_objects and assign to public
-            self.__class__.__nb_objects += 1
-            self.id = self.__class__.__nb_objects
+            Base.__nb_objects += 1
+            self.id = Base.__nb_objects
 
